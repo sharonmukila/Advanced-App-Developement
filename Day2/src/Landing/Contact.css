@@ -1,0 +1,124 @@
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjusted height to fill the viewport */
+    background-image: url("https://img.freepik.com/free-vector/happy-birthday-flags-confetti-card_1017-32699.jpg?t=st=1710774262~exp=1710777862~hmac=e4bd089411c7e9b4cc61dc8ffbea53c4ca6af1082f58662f66529633e4e63ce2&w=996");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5em;
+    animation: fadeIn 1s ease-in-out;
+  }
+  .header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: 800;
+    
+  
+  }
+  
+  .contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left:  4px;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  .contact-form form {
+    width: 80%;
+    max-width: 600px; /* Added max-width for better responsiveness */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bda6bd;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    
+  }
+  
+  .contact-form button {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bb7373;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background-color: #000000;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
