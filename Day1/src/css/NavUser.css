@@ -1,0 +1,112 @@
+/* Navbar.css */
+
+nav {
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Position it at the top of the viewport */
+    height:15%;
+    
+    transform: translateX(-50%); /* Adjust for centering */
+    /* width: 100%; Set the width of the navbar */
+    /* max-width: 2800px; Limit the maximum width */
+    width: 3000px;
+    display:flex;
+    justify-content: space-between;
+    align-items:first baseline;
+    padding: 10px;
+    background-color:rgb(66, 84, 92);
+    color: #fff;
+    z-index: 10; /* Ensure the navbar stays above other content */
+  }
+  
+  .logo img {
+    width: 20%; /* Adjust according to your logo size */
+    height:auto;
+  }
+  
+  .hamburger {
+    display: none; /* Hide hamburger menu by default on larger screens */
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 45px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: larger;
+  }
+  
+  .nav-links a:hover {
+    color: #f0f0f0;
+  }
+  
+  .login-button,
+  .join-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    max-width: 50;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .join-button{
+    margin-right: 30px;
+
+  }
+  
+  .login-button:hover,
+  .join-button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Media Query for Responsive Design */
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      width: 10%; /* Adjust width for smaller screens */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on smaller screens */
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 10px; /* Adjust according to your navbar height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 20px;
+      transition: top 0.3s ease;
+      transform: translateY(-100%);
+      z-index: -1;
+    }
+  
+    .nav-links.open {
+      transform: translateY(0%);
+      z-index: 1;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
